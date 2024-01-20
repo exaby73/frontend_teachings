@@ -1,0 +1,7 @@
+{
+    "github.copilot.enable": {
+        "*": false,
+    },
+    "editor.lineNumbers": "on",
+    "workbench.editor.showTabs": "multiple"
+}
