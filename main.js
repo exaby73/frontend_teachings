@@ -73,5 +73,3 @@ divButton.addEventListener("click", () => {
     answer.innerText = (fn / sn).toString();
   }
 });
-
-answer.innerText = "Welcome to calculator";
