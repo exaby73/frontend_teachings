@@ -1,69 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>JS demo</title>
-    <style>
-      main {
-        max-width: 600px;
-        margin: auto;
-      }
-
-      main .inputs {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 8px;
-      }
-
-      main .inputs input {
-        height: 40px;
-        font-size: 32px;
-      }
-
-      main .inputs input:not(:last-child) {
-        margin-bottom: 8px;
-      }
-
-      main .buttons {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      main .buttons button {
-        flex-grow: 1;
-        height: 40px;
-        font-size: 32px;
-      }
-
-      main .buttons button:not(:last-child) {
-        margin-right: 8px;
-      }
-
-      #answer {
-        margin: 8px 0 0 0;
-        font-size: 36px;
-      }
-
-      #answer::before {
-        content: "Answer: ";
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
+    <title>Todo app</title>
   </head>
   <body>
     <main>
-      <div class="inputs">
-        <input type="number" id="first-number" placeholder="First Number" />
-        <input type="number" id="second-number" placeholder="Second Number" />
+      <div class="input">
+        <input type="text" placeholder="Enter task" />
+        <button>Add</button>
       </div>
 
-      <div class="buttons">
-        <button id="add-button">+</button>
-        <button id="sub-button">-</button>
-        <button id="mul-button">X</button>
-        <button id="div-button">/</button>
-      </div>
-
-      <p id="answer"></p>
+      <ul class="list"></ul>
     </main>
 
     <script src="./main.js"></script>
